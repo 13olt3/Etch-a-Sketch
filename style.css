@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+}
+.box {   
+    background: black;
+    width: 15px;
+    height: 15px;
+    margin: 3px;
+
+}
+.sub1 {
+    background: purple;
+    width: 15px;
+    height: 15px;
+    margin: 3px;
+    position: relative;
+    top: 15px;
+    right: 3px;
+}
