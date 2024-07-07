@@ -1,15 +1,16 @@
 .container{
     display: flex;
 }
-.box {   
+.box {
     background: black;
     width: 15px;
     height: 15px;
     margin: 3px;
 
+
 }
 .sub1 {
-    background: purple;
+    background: black;
     width: 15px;
     height: 15px;
     margin: 3px;
