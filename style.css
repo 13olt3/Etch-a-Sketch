@@ -1,11 +1,12 @@
 .container{
-    display:flex;
-    
+    display:flex;    
     /* gap: 2px; */
 }
 .box{
     background: blue;
-    width: 10px; 
-    height: 10px;
     margin: 0.5px;
+}
+body{
+    display: flex;
+    flex-direction: column-reverse;
 }
