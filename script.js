@@ -19,6 +19,8 @@ for (let i=0; i <16; ++i){
 const allBoxes = document.querySelectorAll(".box");
 allBoxes.forEach((button) => {
     button.addEventListener("mouseover", function(e){
+
         e.target.style.background = "red";
+        
     });
 });
