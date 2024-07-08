@@ -1,17 +1,24 @@
-
 const container = document.querySelector(".container");
 
-for ( var i = 0; i < 16; i++){
-    var squareColumn = document.createElement("div");
-    squareColumn.setAttribute("class", "box");
-    for( var j = 0; j < 15; j++){
-        var squareRow = document.createElement("div");
-        squareRow.setAttribute("class", "box");
-        squareColumn.appendChild(squareRow);
+
+for (let i=0; i <16; ++i){
+    var newBox = document.createElement("div");
+    newBox.setAttribute("class", "row");   
+    
+    for (let j=0; j<16; ++j){
+        var boxRow = document.createElement("div");
+        boxRow.setAttribute("class", "box");
+        newBox.appendChild(boxRow);
     }
-    container.appendChild(squareColumn);
+    container.appendChild(newBox);
 }
 
-
-
-
+// box.addEventListener("mouseover", function(e){
+//     e.target.style.background = "blue";
+// });
+const allBoxes = document.querySelectorAll(".box");
+allBoxes.forEach((button) => {
+    button.addEventListener("mouseover", function(e){
+        e.target.style.background = "red";
+    });
+});
