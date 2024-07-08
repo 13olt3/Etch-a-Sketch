@@ -38,15 +38,23 @@ function createGrid(numOfTiles){
             
             newBox.appendChild(boxRow);
         }
-        const allBoxes = document.querySelectorAll(".box");
-        allBoxes.forEach((button) => {
-            button.addEventListener("mouseover", function(e){
-                e.target.style.background = "red";        
-            });
-        });
+
         container.appendChild(newBox);
     }
+    const allBoxes = document.querySelectorAll(".box");
+    allBoxes.forEach((button) => {
+        button.addEventListener("mouseover", function(e){
+            e.target.style.background = randColor();        
+        });
+    });
 
+}
+function randColor(){
+    let r = Math.floor(Math.random() * 255);
+    let g = Math.floor(Math.random() * 255);
+    let b = Math.floor(Math.random() * 255);
+    let output = "rgb(" + r + ", " + g + ", " + b + ")";
+    return output;
 }
 
 
